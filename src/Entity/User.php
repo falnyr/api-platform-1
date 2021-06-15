@@ -52,7 +52,7 @@ class User implements UserInterface
     private $password;
 
     /**
-     * @Groups({"user:read", "user:write", "cheese_listing:item:get"})
+     * @Groups({"user:read", "user:write", "cheese_listing:item:get", "cheese_listing:write"})
      * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\NotBlank()
      */
