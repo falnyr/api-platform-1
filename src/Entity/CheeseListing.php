@@ -24,6 +24,9 @@ use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
  *     shortName="cheeses",
  *     normalizationContext={"groups"={"cheese_listing:read"}},
  *     denormalizationContext={"groups"={"cheese_listing:write"}},
+ *     attributes={
+*           "pagination_items_per_page"=2
+ *     }
  * )
  * @ORM\Entity(repositoryClass=CheeseListingRepository::class)
  * @ApiFilter(BooleanFilter::class, properties={"isPublished"})
