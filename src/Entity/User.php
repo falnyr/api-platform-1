@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -12,6 +13,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
 
+use ApiPlatform\Core\Serializer\Filter\PropertyFilter;
+
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ApiResource(
@@ -21,6 +24,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * )
  * @UniqueEntity(fields={"username"})
  * @UniqueEntity(fields={"email"})
+ * @ApiFilter(PropertyFilter::class)
  */
 class User implements UserInterface
 {
