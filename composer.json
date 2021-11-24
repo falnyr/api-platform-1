@@ -24,7 +24,7 @@
         "symfony/property-info": "4.2.*|4.3.*",
         "symfony/proxy-manager-bridge": "4.2.*|4.3.*",
         "symfony/security-bundle": "4.2.*|4.3.*",
-        "symfony/serializer": "4.2.*|4.3.*",
+        "symfony/serializer": "^4.4.35",
         "symfony/twig-bundle": "4.2.*|4.3.*",
         "symfony/validator": "4.2.*|4.3.*",
         "symfony/yaml": "4.2.*"
